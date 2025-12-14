@@ -1,4 +1,4 @@
-# 🗺️ SHOP.CO - Complete Routes Documentation
+# 🗺️ SHOPIND.CO - Complete Routes Documentation
 
 ## 📋 Table of Contents
 - [Public Routes](#public-routes)

@@ -2,8 +2,8 @@ import { SlideUp } from "@/components/animated-page"
 import { Shield } from "lucide-react"
 
 export const metadata = {
-  title: "Privacy Policy | SHOP.CO",
-  description: "Learn how SHOP.CO collects, uses, and protects your personal information.",
+  title: "Privacy Policy | SHOPIND.CO",
+  description: "Learn how SHOPIND.CO collects, uses, and protects your personal information.",
 }
 
 export default function PrivacyPage() {
@@ -109,7 +109,7 @@ export default function PrivacyPage() {
                 <li>Object to processing of your information</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                To exercise these rights, please contact us at privacy@shop.co
+                To exercise these rights, please contact us at privacy@SHOPIND.CO
               </p>
             </section>
           </SlideUp>
@@ -153,7 +153,7 @@ export default function PrivacyPage() {
                 If you have questions about this Privacy Policy, please contact us at:
               </p>
               <div className="mt-4 text-muted-foreground">
-                <p>Email: privacy@shop.co</p>
+                <p>Email: privacy@SHOPIND.CO</p>
                 <p>Phone: +1 (555) 123-4567</p>
                 <p>Address: 123 Fashion Ave, New York, NY 10001</p>
               </div>

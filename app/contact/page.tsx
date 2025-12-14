@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   {[
-                    { icon: Mail, label: "Email", value: "support@shop.co" },
+                    { icon: Mail, label: "Email", value: "support@SHOPIND.CO" },
                     { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
                     { icon: MapPin, label: "Address", value: "123 Fashion Ave, New York, NY 10001" },
                   ].map((item, index) => (

@@ -2,8 +2,8 @@ import { SlideUp } from "@/components/animated-page"
 import { FileText } from "lucide-react"
 
 export const metadata = {
-  title: "Terms & Conditions | SHOP.CO",
-  description: "Read SHOP.CO's terms and conditions for using our service.",
+  title: "Terms & Conditions | SHOPIND.CO",
+  description: "Read SHOPIND.CO's terms and conditions for using our service.",
 }
 
 export default function TermsPage() {
@@ -23,7 +23,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">1. Agreement to Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing and using SHOP.CO ("Service"), you agree to be bound by these Terms and Conditions. If you
+                By accessing and using SHOPIND.CO ("Service"), you agree to be bound by these Terms and Conditions. If you
                 disagree with any part of these terms, you may not access the Service.
               </p>
             </section>
@@ -33,7 +33,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">2. Use License</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Permission is granted to temporarily access the materials (information or software) on SHOP.CO's website
+                Permission is granted to temporarily access the materials (information or software) on SHOPIND.CO's website
                 for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of
                 title.
               </p>
@@ -75,7 +75,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">5. Shipping and Delivery</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Shipping times are estimates and are not guaranteed. SHOP.CO is not responsible for delays caused by
+                Shipping times are estimates and are not guaranteed. SHOPIND.CO is not responsible for delays caused by
                 shipping carriers or customs processing. Risk of loss and title for purchased items pass to you upon
                 delivery to the carrier. For more information, please see our Delivery Details page.
               </p>
@@ -109,9 +109,9 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">8. Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed">
-                In no event shall SHOP.CO or its suppliers be liable for any damages (including, without limitation,
+                In no event shall SHOPIND.CO or its suppliers be liable for any damages (including, without limitation,
                 damages for loss of data or profit, or due to business interruption) arising out of the use or inability
-                to use the materials on SHOP.CO's website, even if SHOP.CO or a SHOP.CO authorized representative has
+                to use the materials on SHOPIND.CO's website, even if SHOPIND.CO or a SHOPIND.CO authorized representative has
                 been notified of the possibility of such damage.
               </p>
             </section>
@@ -121,7 +121,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">9. Modifications to Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                SHOP.CO may revise these terms of service at any time without notice. By using this website, you agree
+                SHOPIND.CO may revise these terms of service at any time without notice. By using this website, you agree
                 to be bound by the current version of these Terms and Conditions.
               </p>
             </section>
@@ -131,7 +131,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">10. Contact Information</h2>
               <p className="text-muted-foreground leading-relaxed">
-                If you have any questions about these Terms & Conditions, please contact us at legal@shop.co or +1 (555)
+                If you have any questions about these Terms & Conditions, please contact us at legal@SHOPIND.CO or +1 (555)
                 123-4567.
               </p>
             </section>

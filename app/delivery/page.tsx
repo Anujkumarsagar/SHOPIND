@@ -3,8 +3,8 @@ import { Truck, Package, MapPin, Clock, DollarSign, Globe } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata = {
-  title: "Delivery Details | SHOP.CO",
-  description: "Learn about SHOP.CO's shipping methods, delivery times, and international shipping.",
+  title: "Delivery Details | SHOPIND.CO",
+  description: "Learn about SHOPIND.CO's shipping methods, delivery times, and international shipping.",
 }
 
 export default function DeliveryPage() {

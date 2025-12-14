@@ -61,6 +61,10 @@ export function ProductManager({ products: initialProducts }: { products: Produc
       })
       .select()
 
+      if(data){
+        setIsAddingProduct(false)
+      }
+
     if (error) {
       toast.error("Failed to add product")
     } else {

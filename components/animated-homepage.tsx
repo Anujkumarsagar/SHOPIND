@@ -66,20 +66,22 @@ export function AnimatedHomePage({ newArrivals, topSelling }: AnimatedHomePagePr
 
             {/* Right Image */}
             <FadeIn delay={0.2}>
-              <div className="relative h-[400px] lg:h-[600px]">
-                <div className="absolute top-10 right-10 lg:top-20 lg:right-20">
+              <div className="relative overflow-hidden h-[400px] lg:h-[600px]">
+                <div className="absolute top-10 right-10 z-10 lg:top-20 lg:right-20">
                   <Sparkles className="h-12 w-12 fill-current" />
                 </div>
-                <div className="absolute bottom-10 left-10">
+                <div className="absolute z-10 bottom-10 left-10">
                   <Sparkles className="h-8 w-8 fill-current" />
                 </div>
-                <Image
-                  src="/images/homepage.jpg"
-                  alt="Fashion models showcasing stylish clothing"
-                  fill
-                  className="object-contain"
-                  priority
-                />
+                <div className=" h-full w-full">
+                  <Image
+                    src="https://plus.unsplash.com/premium_photo-1664202526559-e21e9c0fb46a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Fashion models showcasing stylish clothing"
+                    fill
+                    className="object-cover "
+                    priority
+                  />
+                </div>
               </div>
             </FadeIn>
           </div>
@@ -88,9 +90,9 @@ export function AnimatedHomePage({ newArrivals, topSelling }: AnimatedHomePagePr
 
       {/* Brands Section */}
       <FadeIn delay={0.1}>
-        <section className="bg-primary text-primary-foreground py-8">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-wrap items-center justify-between gap-8">
+        <section className="bg-primary text-primary-foreground overflow-hidden  py-8">
+          <div className="container  px-4 md:px-6">
+            <div className="flex flex-nowrap items-center justify-between gap-8">
               <span className="text-2xl md:text-3xl font-bold">VERSACE</span>
               <span className="text-2xl md:text-3xl font-bold">ZARA</span>
               <span className="text-2xl md:text-3xl font-bold">GUCCI</span>
@@ -168,7 +170,7 @@ export function AnimatedHomePage({ newArrivals, topSelling }: AnimatedHomePagePr
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
                   <Link href="/shop?category=casual">
                     <CardContent className="p-0 relative h-[200px] md:h-[280px]">
-                      <Image src="/images/homepage.jpg" alt="Casual style" fill className="object-cover" />
+                      <Image src="https://images.unsplash.com/photo-1708317031389-1afe5ccc6f96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FzdWFsJTIwY2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Casual style" fill className="object-cover opacity-70 hover:opacity-100 transform transition-all duration-200" />
                       <div className="absolute top-6 left-6">
                         <h3 className="text-2xl font-bold">Casual</h3>
                       </div>
@@ -180,7 +182,7 @@ export function AnimatedHomePage({ newArrivals, topSelling }: AnimatedHomePagePr
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer md:col-span-2">
                   <Link href="/shop?category=formal">
                     <CardContent className="p-0 relative h-[200px] md:h-[280px]">
-                      <Image src="/images/homepage.jpg" alt="Formal style" fill className="object-cover" />
+                      <Image src="https://plus.unsplash.com/premium_photo-1671469876456-b1bafec2d029?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9ybWFsJTIwY2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Formal style" fill className="object-cover opacity-70 hover:opacity-100 transform transition-all duration-200" />
                       <div className="absolute top-6 left-6">
                         <h3 className="text-2xl font-bold">Formal</h3>
                       </div>
@@ -192,7 +194,7 @@ export function AnimatedHomePage({ newArrivals, topSelling }: AnimatedHomePagePr
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer md:col-span-2">
                   <Link href="/shop?category=party">
                     <CardContent className="p-0 relative h-[200px] md:h-[280px]">
-                      <Image src="/images/homepage.jpg" alt="Party style" fill className="object-cover" />
+                      <Image src="https://plus.unsplash.com/premium_photo-1726866179670-b495cac17a70?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHBhcnR5JTIwY2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Party style" fill className="object-cover opacity-70 hover:opacity-100 transform transition-all duration-200" />
                       <div className="absolute top-6 left-6">
                         <h3 className="text-2xl font-bold">Party</h3>
                       </div>
@@ -204,7 +206,7 @@ export function AnimatedHomePage({ newArrivals, topSelling }: AnimatedHomePagePr
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
                   <Link href="/shop?category=gym">
                     <CardContent className="p-0 relative h-[200px] md:h-[280px]">
-                      <Image src="/images/homepage.jpg" alt="Gym style" fill className="object-cover" />
+                      <Image src="https://images.unsplash.com/photo-1752329514506-35c6aa9cfed3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fGd5bSUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="Gym style" fill className="object-cover opacity-70 hover:opacity-100 transform transition-all duration-200" />
                       <div className="absolute top-6 left-6">
                         <h3 className="text-2xl font-bold">Gym</h3>
                       </div>
@@ -229,17 +231,17 @@ export function AnimatedHomePage({ newArrivals, topSelling }: AnimatedHomePagePr
                 {
                   name: "Sarah M.",
                   comment:
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+                    "I'm blown away by the quality and style of the clothes I received from SHOPIND.CO. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
                 },
                 {
                   name: "Alex K.",
                   comment:
-                    "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
+                    "Finding clothes that align with my personal style used to be a challenge until I discovered SHOPIND.CO. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
                 },
                 {
                   name: "James L.",
                   comment:
-                    "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+                    "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon SHOPIND.CO. The selection of clothes is not only diverse but also on-point with the latest trends.",
                 },
               ].map((testimonial, i) => (
                 <StaggerItem key={i}>

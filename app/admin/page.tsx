@@ -3,7 +3,7 @@ import { createClient } from "@/lib/supabase/server"
 import { AdminDashboard } from "@/components/admin-dashboard"
 
 export const metadata = {
-  title: "Admin Dashboard | SHOP.CO",
+  title: "Admin Dashboard | SHOPIND.CO",
   description: "Manage products, orders, and view store analytics.",
 }
 

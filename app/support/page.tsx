@@ -6,8 +6,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export const metadata = {
-  title: "Customer Support | SHOP.CO",
-  description: "Get help with your SHOP.CO order, returns, payments, and more.",
+  title: "Customer Support | SHOPIND.CO",
+  description: "Get help with your SHOPIND.CO order, returns, payments, and more.",
 }
 
 export default function SupportPage() {
@@ -29,7 +29,7 @@ export default function SupportPage() {
     {
       icon: Mail,
       title: "Email Support",
-      description: "support@shop.co",
+      description: "support@SHOPIND.CO",
       action: "Send Email",
       available: "24/7 Response within 24hrs",
     },

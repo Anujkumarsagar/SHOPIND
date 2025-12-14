@@ -106,7 +106,7 @@ export function SiteHeader({ user, cartItemsCount = 0 }: SiteHeaderProps) {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400 }}
           >
-            SHOP.CO
+            SHOPIND.CO
           </motion.span>
         </Link>
 

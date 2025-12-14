@@ -3,8 +3,8 @@ import Image from "next/image"
 import { Users, Target, Award, TrendingUp } from "lucide-react"
 
 export const metadata = {
-  title: "About Us | SHOP.CO",
-  description: "Learn about SHOP.CO's mission, values, and commitment to fashion excellence.",
+  title: "About Us | SHOPIND.CO",
+  description: "Learn about SHOPIND.CO's mission, values, and commitment to fashion excellence.",
 }
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <SlideUp>
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">About SHOP.CO</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">About SHOPIND.CO</h1>
               <p className="text-lg md:text-xl text-muted-foreground text-balance">
                 We're redefining fashion retail by combining quality, style, and affordability. Our mission is to make
                 everyone feel confident and stylish in what they wear.
@@ -58,7 +58,7 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded in 2013, SHOP.CO started with a simple vision: to make high-quality, stylish clothing
+                    Founded in 2013, SHOPIND.CO started with a simple vision: to make high-quality, stylish clothing
                     accessible to everyone. What began as a small boutique has grown into a global fashion destination.
                   </p>
                   <p>

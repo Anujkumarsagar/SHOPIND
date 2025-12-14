@@ -1,4 +1,4 @@
-# 🚀 SHOP.CO - Local Development Setup Guide
+# 🚀 SHOPIND.CO - Local Development Setup Guide
 
 ## 📋 Prerequisites
 
