@@ -53,7 +53,10 @@ export function ProductManager({ products: initialProducts }: { products: Produc
         description: formData.get("description"),
         price: Number.parseFloat(formData.get("price") as string),
         discount_percentage: formData.get("discount") ? Number.parseInt(formData.get("discount") as string) : null,
-        image_url: formData.get("image_url") || "/placeholder.svg?height=400&width=400",
+        image_url_1: formData.get("image_url_1") || "/placeholder.svg?height=400&width=400",
+        image_url_2: formData.get("image_url_2") || "/placeholder.svg?height=400&width=400",
+        image_url_3: formData.get("image_url_3") || "/placeholder.svg?height=400&width=400",
+
         category: formData.get("category"),
         rating: 4.0,
         sizes: (formData.get("sizes") as string).split(",").map((s) => s.trim()),
@@ -130,8 +133,16 @@ export function ProductManager({ products: initialProducts }: { products: Produc
                 <Input id="category" name="category" required placeholder="e.g., t-shirts, jeans" />
               </div>
               <div>
-                <Label htmlFor="image_url">Image URL</Label>
-                <Input id="image_url" name="image_url" type="url" placeholder="https://..." />
+                <Label htmlFor="image_url_1">Image URL 1</Label>
+                <Input id="image_url_1" name="image_url_1" type="url" placeholder="https://..." />
+              </div>
+              <div>
+                <Label htmlFor="image_url_2">Image URL 2</Label>
+                <Input id="image_url_2" name="image_url_2" type="url" placeholder="https://..." />
+              </div>
+              <div>
+                <Label htmlFor="image_url_3">Image URL 3</Label>
+                <Input id="image_url_3" name="image_url_3" type="url" placeholder="https://..." />
               </div>
               <div>
                 <Label htmlFor="sizes">Available Sizes (comma-separated)</Label>
@@ -162,7 +173,7 @@ export function ProductManager({ products: initialProducts }: { products: Produc
               className="flex items-center gap-4 p-4 border rounded-lg hover:shadow-md transition-shadow"
             >
               <div className="relative h-20 w-20 rounded-lg overflow-hidden bg-secondary">
-                <Image src={product.image_url || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
+                <Image src={product.image_url_1 || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold">{product.name}</h3>

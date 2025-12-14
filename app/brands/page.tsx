@@ -36,7 +36,7 @@ export default function BrandsPage() {
         </div>
 
         {/* Brands Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="container overflow-hidden mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {brands.map((brand) => (
             <Link key={brand.slug} href={`/shop?brand=${brand.slug}`}>
               <Card className="group hover:shadow-lg transition-all hover:scale-105">

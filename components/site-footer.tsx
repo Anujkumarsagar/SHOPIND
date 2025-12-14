@@ -149,7 +149,7 @@ export function SiteFooter() {
         {/* Bottom */}
         <div className="pt-8 border-t flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">SHOPIND.CO © 2025, All Rights Reserved</p>
-          <div className="flex gap-3">
+          <div className="flex gap-1">
             <div className="h-8 px-3 bg-background border rounded flex items-center justify-center">
               <span className="text-xs font-semibold">VISA</span>
             </div>

@@ -85,7 +85,7 @@ export default async function CartPage() {
                         {/* Product Image */}
                         <div className="relative w-24 h-24 rounded-lg overflow-hidden bg-secondary/30 shrink-0">
                           <Image
-                            src={item.product.image_url || "/placeholder.svg"}
+                            src={item.product.image_url_1 || "/placeholder.svg"}
                             alt={item.product.name}
                             fill
                             className="object-cover"

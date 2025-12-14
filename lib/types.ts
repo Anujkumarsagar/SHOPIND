@@ -5,7 +5,9 @@ export interface Product {
   price: number
   original_price: number | null
   discount_percentage: number | null
-  image_url: string
+  image_url_1: string
+  image_url_2: string
+  image_url_3: string
   category: string
   rating: number
   reviews_count: number

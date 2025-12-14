@@ -16,10 +16,10 @@ interface AnimatedHomePageProps {
 
 export function AnimatedHomePage({ newArrivals, topSelling }: AnimatedHomePageProps) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mx-auto overflow-hidden">
       {/* Hero Section */}
       <section className="relative bg-secondary/30 overflow-hidden">
-        <div className="container px-4 md:px-6">
+        <div className="container overflow-hidden px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[600px] py-12 lg:py-0">
             {/* Left Content */}
             <SlideUp>
@@ -286,7 +286,7 @@ function ProductCard({ product }: { product: Product }) {
         <CardContent className="p-0">
           <div className="relative aspect-square bg-secondary/30">
             <Image
-              src={product.image_url || "/placeholder.svg"}
+              src={product.image_url_1 || "/placeholder.svg"}
               alt={product.name}
               fill
               className="object-cover group-hover:scale-105 transition-transform"

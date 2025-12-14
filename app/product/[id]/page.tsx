@@ -49,6 +49,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
     ? product.price * (1 - product.discount_percentage / 100)
     : product.price
 
+      const image =
+    product.image_url_1 ||
+    product.image_url ||
+    "/placeholder.svg"
+
   return (
     <div className="min-h-screen">
       <div className="container px-4 md:px-6 py-8">
@@ -74,7 +79,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           {/* Product Images */}
           <div className="space-y-4">
             <div className="relative aspect-square rounded-lg overflow-hidden bg-secondary/30">
-              <Image src={product.image_url || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
+              <Image src={image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
             </div>
             <div className="grid grid-cols-3 gap-4">
               {[1, 2, 3].map((i) => (
@@ -83,7 +88,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   className="relative aspect-square rounded-lg overflow-hidden bg-secondary/30 cursor-pointer"
                 >
                   <Image
-                    src={product.image_url || "/placeholder.svg"}
+                    src={i===1 && image || "/placeholder.svg"}
                     alt={`${product.name} view ${i}`}
                     fill
                     className="object-cover"
@@ -208,13 +213,18 @@ function ProductCard({ product }: { product: Product }) {
     ? product.price * (1 - product.discount_percentage / 100)
     : product.price
 
+      const image =
+    product.image_url_1 ||
+    product.image_url ||
+    "/placeholder.svg"
+
   return (
     <Link href={`/product/${product.id}`}>
       <Card className="overflow-hidden group hover:shadow-lg transition-shadow">
         <CardContent className="p-0">
           <div className="relative aspect-square bg-secondary/30">
             <Image
-              src={product.image_url || "/placeholder.svg"}
+              src={image || "/placeholder.svg"}
               alt={product.name}
               fill
               className="object-cover group-hover:scale-105 transition-transform"

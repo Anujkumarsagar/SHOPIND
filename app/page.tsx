@@ -40,7 +40,7 @@ function ProductCard({ product }: { product: Product }) {
         <CardContent className="p-0">
           <div className="relative aspect-square bg-secondary/30">
             <Image
-              src={product.image_url || "/placeholder.svg"}
+              src={product.image_url_1 || "/placeholder.svg"}
               alt={product.name}
               fill
               className="object-cover group-hover:scale-105 transition-transform"

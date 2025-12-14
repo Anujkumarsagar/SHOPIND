@@ -87,17 +87,16 @@ export function AnimatedShopPage({ products, pageTitle, searchParams }: Animated
             {/* Pagination */}
             {products && products.length > 9 && (
               <SlideUp delay={0.3}>
-                <div className="flex items-center justify-center gap-2 mt-8">
+                <div className="flex  w-fit  items-center justify-center gap-2 mt-8">
                   <Button variant="outline" disabled>
                     Previous
                   </Button>
-                  {[1, 2, 3].map((page) => (
+                  {[1, ].map((page) => (
                     <Button key={page} variant={page === 1 ? "default" : "outline"}>
                       {page}
                     </Button>
                   ))}
                   <span className="px-2">...</span>
-                  <Button variant="outline">9</Button>
                   <Button variant="outline">10</Button>
                   <Button variant="outline">Next</Button>
                 </div>
@@ -121,7 +120,7 @@ function ProductCard({ product }: { product: Product }) {
         <CardContent className="p-0">
           <div className="relative aspect-square bg-secondary/30">
             <Image
-              src={product.image_url || "/placeholder.svg"}
+              src={product.image_url_1 || "/placeholder.svg"}
               alt={product.name}
               fill
               className="object-cover group-hover:scale-105 transition-transform"
